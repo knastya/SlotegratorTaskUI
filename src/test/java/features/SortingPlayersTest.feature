@@ -1,6 +1,6 @@
 Feature: Sorting players
 
-  Scenario: Sorting players
+  Scenario: Sorting of players
 
     Given Open Casino login page
     When Enter the Username and Password

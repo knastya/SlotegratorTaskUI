@@ -9,7 +9,7 @@ public class LoginPageSteps extends BaseStep {
 
     @Given("^Open Casino login page$")
     public void openCasinoLoginPage() {
-        loginPage = new LoginPage(getDriver());
+        loginPage = new LoginPage(driver);
         loginPage.openPage();
     }
 

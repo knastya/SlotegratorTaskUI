@@ -9,7 +9,7 @@ public class PlayersPageSteps extends BaseStep {
 
     @Then("^Table with players is loaded$")
     public void tableWithPlayersIsLoaded() {
-        playersPage = new PlayersPage(getDriver());
+        playersPage = new PlayersPage(driver);
     }
 
     @When("^User sorts table on Username (.*)$")
@@ -20,7 +20,6 @@ public class PlayersPageSteps extends BaseStep {
     @Then("^Table are sorted correctly by (.*) Username$")
     public void tableSortedByUsername(String userName) throws InterruptedException {
        assert  playersPage.isSortingByUsernameCorrect(userName);
-        destroyDriver();
     }
 
 }
