@@ -12,14 +12,14 @@ public class PlayersPageSteps extends BaseStep {
         playersPage = new PlayersPage(driver);
     }
 
-    @When("^User sorts table on Username (.*)$")
-    public void userSortsTableOnUsername(String userName){
+    @When("^User sorts table by Username (.*)$")
+    public void userSortsTableOnUsername(String userName) {
         playersPage.sortTableByUsername(userName);
     }
 
     @Then("^Table are sorted correctly by (.*) Username$")
     public void tableSortedByUsername(String userName) throws InterruptedException {
-       assert  playersPage.isSortingByUsernameCorrect(userName);
+        assert playersPage.isSortingByUsernameCorrect(userName);
     }
 
 }

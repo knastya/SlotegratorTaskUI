@@ -10,12 +10,12 @@ import java.util.concurrent.TimeUnit;
 public class Hooks extends BaseStep {
 
     @BeforeAll
-    static void setUp(){
+    static void setUp() {
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
     }
 
     @Before
-    public void beforeScenario(){
+    public void beforeScenario() {
         System.out.println("Open browser");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -23,7 +23,7 @@ public class Hooks extends BaseStep {
     }
 
     @After
-    public void afterScenario(){
+    public void afterScenario() {
         driver.quit();
         driver = null;
     }

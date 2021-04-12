@@ -23,15 +23,15 @@ public class MainPage {
     @FindBy(xpath = ".//*[@id='s-menu-users']//a[text() = 'Players']")
     private WebElement playersButton;
 
-    public void mainPageIsOpened(){
+    public void mainPageIsOpened() {
         casinoPic.isDisplayed();
     }
 
-    public void expandUsersList(){
+    public void expandUsersList() {
         usersIcon.click();
     }
 
-    public void openPlayersList(){
+    public void openPlayersList() {
         playersButton.click();
     }
 

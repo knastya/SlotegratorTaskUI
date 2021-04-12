@@ -1,4 +1,4 @@
-Feature: Sorting players
+Feature: Sorting of players
 
   Scenario: Sorting of players
 
@@ -10,5 +10,5 @@ Feature: Sorting players
     When User opens list of players
     Then Table with players is loaded
 
-    When User sorts table on Username Maria
+    When User sorts table by Username Maria
     Then Table are sorted correctly by Maria Username

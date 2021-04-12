@@ -8,7 +8,7 @@ public class MainPageSteps extends BaseStep {
     private MainPage mainPage;
 
     @Then("^User successfully logged in and admin panel opens$")
-    public void userLoggedInAdminPanelOpens(){
+    public void userLoggedInAdminPanelOpens() {
         mainPage = new MainPage(driver);
         mainPage.mainPageIsOpened();
     }
@@ -18,6 +18,5 @@ public class MainPageSteps extends BaseStep {
         mainPage.expandUsersList();
         mainPage.openPlayersList();
     }
-
 
 }
